@@ -1,0 +1,129 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    user-select: none;
+
+    .left {
+        padding: 10px;
+        width: 60%;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-inner {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            .header {
+                text-decoration: underline;
+            }
+
+            .area {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .password-div {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 51%;
+                    position: relative;
+
+                    // &:hover {
+                    //     cursor: pointer;
+                    // }
+
+                    .password {
+                        width: 90%;
+                        border-right: none;
+                        border-width: 1px;
+                        outline: none;
+
+                        &:hover {
+                            cursor: auto;
+                        }
+                    }
+
+                    button {
+                        background-color: white;
+                        border-left: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-width: 0.5px;
+                        margin-left: -6px;
+                        font-size: 20px;
+                        // position: absolute;
+                        // right: 0;
+                        // top: 5px;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+
+                        .icon {
+                            color: black;
+
+                        }
+                    }
+                }
+
+                .user-name,
+                .password {
+                    height: 35px;
+                    font-size: 20px;
+                    border-color: black;
+                    border-width: 1px;
+                    outline: none;
+
+                    &:hover {
+                        cursor: auto;
+                    }
+                }
+
+                .user-name {
+                    width: 50%;
+                }
+
+
+
+                .label {
+                    font-size: 20px;
+                }
+            }
+
+            .button-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 10px 10px 10px;
+
+                .login {
+                    width: 50%;
+                    height: 40px;
+                    background-color: rgb(0, 145, 6);
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    font-size: 15px;
+                    border: none;
+
+                    &:hover {
+                        background-color: rgb(146, 243, 165);
+                        color: black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
